@@ -14,17 +14,9 @@ if (isset($_SERVER['HTTP_X_SENSOR']))
 if (! isset($headers['Sensor'])) {
     die("no sensor id sended!");
 }
-$db = new PDO("sqlite:/usr/local/data/dust.db");
-// set the database parameters
-//$database_name = "luftdaten";
-//$database_host = "127.0.0.1";
-//$database_user = "change_it";
-//$database_password = "change_it";
-//$table_name = "sensor_data";
-//$dbFile = '/usr/local/data/dust.db';
 // establish the database connection
-//$pdo = new PDO('mysql:host=' . $database_host . ';dbname=' . $database_name, $database_user, $database_password);
-//$db = new PDO("sqlite:$dbFile");
+$db = new PDO("sqlite:/usr/local/data/dust.db");
+
 // read the content sended to the API file
 $json = file_get_contents('php://input');
 
