@@ -1,5 +1,6 @@
-CREATE TABLE dust(Currentdate DATE NOT NULL,
-Currentime TIME,
+CREATE TABLE dust(
+Currentdate DATE NOT NULL,
+Currentime TIME NOT NULL,
 SensorID TEXT NOT NULL,
 Temp REAL DEFAULT '0',
 Humidity REAL DEFAULT '0',
