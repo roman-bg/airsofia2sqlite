@@ -1,4 +1,9 @@
 <?php
+/** Allow switching designs
+* @author Roman Rachkov, roman.rachkov@gmail.com
+* @license https://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+* @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License, version 2 (one or other)
+*/
 // read sensor ID ('esp8266-'+ChipID)
 $headers = array();
 if (isset($_SERVER['HTTP_SENSOR']))
